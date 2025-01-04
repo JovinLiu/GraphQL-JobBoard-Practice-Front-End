@@ -4,7 +4,7 @@ import { useCreateJob } from "../lib/graphql/hooks";
 
 function CreateJobPage() {
   const navigate = useNavigate();
-  const [title, setTitle] = ugseState("");
+  const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const { createJob, loading } = useCreateJob();
 
